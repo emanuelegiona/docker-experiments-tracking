@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  ns3-woss:
+    image: egiona/ns3-woss:u18.04-n3.37-w1.12.4
+    container_name: ns3
+    env_file:
+      - vars.env
+    volumes:
+      - ./tracking:/home/tracking
+    entrypoint: ["bash", "-c", "cd /home && ./tracking/entry_script.sh"]

@@ -1,0 +1,19 @@
+---
+name: <your-sweep-name>
+method: grid
+metric:
+  goal: maximize
+  name: pdr_avg
+parameters:
+  seed:
+    values:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+    distribution: categorical
+
+sweep-setup:
+  agents: 1
+  runs-per-sweep: 10

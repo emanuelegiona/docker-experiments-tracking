@@ -1,0 +1,6 @@
+tracking/wandb/
+tracking/__pycache__/
+tracking/config2.yaml
+tracking/sweep2.yaml
+nohup.out
+vars2.env
